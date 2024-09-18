@@ -1,0 +1,162 @@
+@import '../css/variable.css';
+@import '../css/reset.css';
+
+
+
+
+/*****************************
+*****  Main Dashboard Here  ****
+******************************/
+.header {
+    padding: 10px 0;
+    background-color: var(--white-color);
+    box-shadow: var(--shadow-1);
+}
+
+.header-area {
+    /* background-color: rebeccapurple; */
+}
+
+.header-area .profile img {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    border: 1px solid var(--white-off);
+    padding: 2px;
+}
+
+.header-area .logo img {
+    max-width: 190px;
+}
+
+.header-area .menu-btn {
+    font-size: var(--fs-xl);
+    border: 1px solid var(--white-off);
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+
+
+
+/*______  Menu Sidebar ______*/
+.header-area .menu-sidebar {
+    height: 100vh;
+    min-width: 300px;
+    position: fixed;
+    top: 0;
+    background-color: var(--white-color);
+    z-index: 4;
+    box-shadow: var(--shadow-1);
+    overflow: hidden;
+    transform: translateX(-110%);
+    transition: .3s linear;
+}
+
+.menu-sidebar.active {
+    transform: translateX(-11px);
+}
+
+.header-area .head {
+    padding: 20px 10px;
+}
+
+
+.menu-sidebar .wallet {
+    background-color: var(--blue-color);
+    ;
+    padding: 20px 10px;
+}
+
+
+/*_____  Menu _____*/
+.menu-sidebar .menu {}
+
+.menu-sidebar .menu-item.active {
+    background-color: var(--white-off);
+}
+
+.menu-sidebar .menu-item {
+    padding: 15px 10px;
+    border-bottom: 1px solid var(--white-dark);
+    position: relative;
+    cursor: pointer;
+    transition: .3s linear;
+    font-size: var(--fs-xs);
+}
+
+.menu-sidebar .menu-item .uppercase {
+    font-weight: var(--fw-500);
+}
+
+.menu-sidebar .menu-item i {
+    font-size: var(--fs-xl);
+}
+
+.menu-sidebar .menu-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0px;
+    height: 100%;
+    background-color: var(--blue-color);
+    ;
+    transition: .3s linear;
+}
+
+.menu-sidebar .menu-item:hover::after {
+    width: 5px;
+    transition: .3s linear;
+}
+
+
+/*_____ Log Out _____*/
+.menu-item.log-out {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    border-bottom: none;
+    /* background-color: var(--white-dark); */
+    max-width: 300px;
+    width: 100%;
+}
+
+
+
+/*________________  total-balance  _________________ */
+.total-balance {
+    /* margin: 0 20px; */
+}
+
+.total-balance-area {
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: var(--white-color);
+    box-shadow: var(--shadow-1);
+    border-bottom: 4px solid var(--blue-color);
+}
+
+
+/*________________  total-balance  _________________ */
+.carts .cart {
+    background-color: var(--white-color);
+    border-radius: 8px;
+    box-shadow: var(--shadow-1);
+    padding: 12px 10px;
+    min-width: 150px;
+}
+
+.carts .cart .left {
+    background-color: var(--white-off);
+    padding: 5px;
+    max-width: 50px;
+}
+
+.carts .cart img {
+    max-width: 40px;
+
+}

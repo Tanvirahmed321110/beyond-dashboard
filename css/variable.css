@@ -1,0 +1,43 @@
+/* Font Cnd */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Remix icon cnd */
+@import url('https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css');
+
+
+:root {
+    /*______  Color  ______ */
+    --dark-color: #362f2f;
+    --black-color: #000;
+    --gray-color: gray;
+    --white-color: #fff;
+    --white-off: #f2f2f2;
+    --white-dark: #e9d6d6;
+    --blue-color: blueviolet;
+
+    /*______  Font Size  ______ */
+    --fs-xs: 13px;
+    --fs-sm: 15px;
+    --fs-md: 16px;
+    --fs-lg: 18px;
+    --fs-xl: 20px;
+    --fs-xxl: 24px;
+    --fs-xxxl: 28px;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    /*______  Font Weight  ______ */
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+
+
+    --font-montserrat: "Montserrat", system-ui;
+
+
+
+    /* shadow */
+    --shadow-1: 0 2px 3px rgba(0, 0, 0, .04);
+    --shadow-2: 0 2px 5px rgba(0, 0, 0, .07);
+
+}
