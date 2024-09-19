@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee_Management</title>
+        <link rel="stylesheet" href="../../css/style.css">
+    </head>
+
+    <body class="main-page">
+        <header>
+            <div class="header">
+                <div class="container">
+                    <div class="flex-between header-area gap-5">
+
+                        <!-- Profile -->
+                        <div class="profile">
+                            <img src="https://apps.uniflexlimited.com/assets/dashboard_uni/1.jpg" alt="">
+                        </div>
+
+                        <!-- Logo -->
+                        <a href="index.html" class="logo">
+                            <img src="https://uniflexlimited.com/wp-content/uploads/2024/05/Untitled-1-2.png" alt="">
+                        </a>
+
+                        <!-- Menu Btn -->
+                        <button id="menu-btn" class="menu-btn flex-center">
+                            <i class="ri-menu-line"></i>
+                        </button>
+
+
+                        <!--_______ Menu Sidebar _______-->
+                        <div class="menu-sidebar" id="menu-sidebar">
+
+                            <!-- Head -->
+                            <div class="head">
+                                <div class="profile d-flex align-center gap-10">
+                                    <img src="https://apps.uniflexlimited.com/assets/dashboard_uni/1.jpg" alt="">
+
+                                    <div>
+                                        <div class="name fw-bold fs-lg">Brenda Davis</div>
+                                        <div class="user-id mt-1 fs-sm">240323232 </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Wallet -->
+                            <div class="wallet color-white text-center">
+                                <div class="fs-lg fw-bold fs-xl">Total Balance</div>
+                                <div class="balance mt-2 fs-xxl fw-bold">$ <span>1300.55</span></div>
+                            </div>
+
+                            <!--________  Menu  ______-->
+                            <div class="menu">
+                                <div class="fw-bold p-2 fs-xl mt-5 uppercase">management</div>
+
+                                <!-- Menu items -->
+                                <ul class="menu-items mt-2">
+
+                                    <!-- single menu item -->
+                                    <li class="menu-item active">
+                                        <a class="justify-start gap-10" href="index.html">
+                                            <span class="flex-center"><i class="ri-home-line"></i></span>
+                                            <div class="text uppercase">home</div>
+                                        </a>
+                                    </li>
+                                    <!-- single menu item -->
+                                    <li class="menu-item ">
+                                        <a class="justify-start gap-10" href="index.html">
+                                            <span class="flex-center">
+                                                <i class="ri-team-line"></i>
+                                            </span>
+                                            <div class="text uppercase">hrm</div>
+                                        </a>
+                                    </li>
+                                    <!-- single menu item -->
+                                    <li class="menu-item ">
+                                        <a class="justify-start gap-10" href="index.html">
+                                            <span class="flex-center"><i class="ri-projector-line"></i></span>
+                                            <div class="text uppercase">projects</div>
+                                        </a>
+                                    </li>
+                                    <!-- single menu item -->
+                                    <li class="menu-item ">
+                                        <a class="justify-start gap-10" href="index.html">
+                                            <span class="flex-center">
+                                                <i class="ri-account-circle-line"></i>
+                                            </span>
+                                            <div class="text uppercase">account</div>
+                                        </a>
+                                    </li>
+                                    <!-- single menu item -->
+                                    <li class="menu-item ">
+                                        <a class="justify-start gap-10" href="index.html">
+                                            <span class="flex-center"><i class="ri-home-line"></i></span>
+                                            <div class="text uppercase">reports</div>
+                                        </a>
+                                    </li>
+                                    <!-- single menu item -->
+                                    <li class="menu-item ">
+                                        <a class="justify-start gap-10" href="index.html">
+                                            <span class="flex-center"><i class="ri-compass-line"></i>
+                                            </span>
+                                            <div class="text uppercase">Project Visit</div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <!-- single menu item -->
+                                <div class="menu-item log-out">
+                                    <a class="justify-start gap-10" href="index.html">
+                                        <span class="flex-center fw-bold"><i class="ri-logout-circle-r-line"></i></span>
+                                        <div class="text uppercase fw-bold">Log Out</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <main>
+            <section class="page management">
+                <div class="container">
+                    <div class="fs-xxl my-4 fw-bold">Employee Management</div>
+                    <div class="head flex-between gap-15">
+                        <input type="text" placeholder="search">
+                        <div class="text">Marketing users</div>
+                    </div>
+
+
+                    <div class="table-area">
+                        <table>
+                            <thead>
+                                <th>_</th>
+                                <th><input type="checkbox"></th>
+                                <th>ID</th>
+                                <th>User ID</th>
+                                <th>Image</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>+</td>
+                                    <td><input type="checkbox"></td>
+                                    <td>1</td>
+                                    <td>tanvir12</td>
+                                    <td><img src="https://apps.uniflexlimited.com/assets/dashboard_uni/1.jpg" alt="">
+                                    </td>
+                                    <td>Tanvir Ahmed</td>
+                                    <td>tanvir@gmail.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <script src="../../js/app.js"></script>
+    </body>
+
+</html>

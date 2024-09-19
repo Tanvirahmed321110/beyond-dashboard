@@ -22,3 +22,30 @@ btn.addEventListener('click', function () {
     toggle = !toggle
 
 });
+
+
+// progress
+// Create a Circle ProgressBar
+var circle = new ProgressBar.Circle('#progress-circle', {
+    color: '#4e73df',
+    strokeWidth: 8,
+    duration: 1400, // Animation duration in ms
+    easing: 'bounce',
+    text: {
+        autoStyleContainer: false
+    },
+    from: { color: '#4e73df', width: 8 },
+    to: { color: '#4e73df', width: 8 },
+    step: function (state, circle) {
+        circle.path.setAttribute('stroke', state.color);
+        var value = Math.round(circle.value() * 100);
+        if (value === 0) {
+            circle.setText('');
+        } else {
+            circle.setText(value + '%');
+        }
+    }
+});
+
+// Set the progress dynamically
+circle.animate(0.75);  // Example: Animate to 75%
