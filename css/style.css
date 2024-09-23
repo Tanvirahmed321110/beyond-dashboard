@@ -52,6 +52,7 @@
     overflow: hidden;
     transform: translateX(-110%);
     transition: .3s linear;
+    border-right: 1px solid var(--white-off);
 }
 
 .menu-sidebar.active {
@@ -109,6 +110,16 @@
 .menu-sidebar .menu-item:hover::after {
     width: 5px;
     transition: .3s linear;
+}
+
+
+/* sub-menu */
+.sub-menu {
+    max-height: 0;
+}
+
+.sub-menu .menu-item {
+    padding-left: 25px;
 }
 
 
@@ -427,17 +438,26 @@ table input[type='checkbox'] {
     width: 25px;
 }
 
+table tbody tr:nth-child(even) {
+    background-color: var(--white-off);
+}
+
 .table-area thead {
     background-color: var(--white-off);
 }
 
 th,
 td {
-    padding: 12px 15px;
+    padding: 12px 10px;
     border: 1px solid var(--white-dark);
     text-align: center;
     width: fit-content;
     text-wrap: nowrap;
+}
+
+td {
+    padding: 8px 10px;
+    font-size: var(--fs-xs);
 }
 
 th {
@@ -445,7 +465,7 @@ th {
 }
 
 td img {
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
 }
